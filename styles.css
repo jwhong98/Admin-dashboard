@@ -31,6 +31,8 @@ header {
   border-radius: 10px;
   border: none;
   padding: 0.25rem;
+  background-color: #e2e8f0;
+  margin-left: 1rem;
 }
 
 .top .notifications {
@@ -41,7 +43,36 @@ header {
 
 .bottom {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.button-container {
+  justify-self: end;
+  display: flex;
+  gap: 2rem;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.profile-info .name {
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  background-color: #0ea5e9;
+  color: #fff;
+  padding: 0.5rem 0;
+  width: 5.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 20px;
 }
 
 #sidebar {
@@ -53,15 +84,22 @@ header {
   color: #fff;
 }
 
+.icon {
+  filter: brightness(0) invert(1);
+}
+
 .logo {
   margin-bottom: 4rem;
   align-self: center;
   font-size: 2rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
   margin-right: 1rem;
+  width: 3rem;
 }
 
 .menu {
