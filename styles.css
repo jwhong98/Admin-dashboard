@@ -128,22 +128,55 @@ button {
   background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: 5% 1fr 1fr; */
+  grid-template-rows: 1fr 1fr;
   grid-row: 2/6;
-  padding: 2rem 1rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+#main .sections {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 #main .projects {
   grid-column: 1/2;
-  grid-row: 1/3;
+  grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.projects .card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 10px solid #f0b429;
+  position: relative;
+}
+
+.card .icons {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 #main .announcements {
   grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  background-color: #fff;
 }
 
 #main .trending {
   grid-column: 2/3;
+  grid-row: ;
 }
